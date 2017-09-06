@@ -7,3 +7,8 @@ def sey_muself(name, old, man=True):
     else:
         print("나는 여자입니다.")
 
+sey_muself("Maxpia", 39)
+
+sey_muself("Maxpia", 39, True)
+
+sey_muself("FlyOda", 38, False)
