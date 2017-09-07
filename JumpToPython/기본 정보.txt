@@ -11,3 +11,33 @@
     딕셔너리, 집합은 순서가 없어서 불가능
     
 스크립트 파일은 utf-8로 인코딩 되어야 실행된다.
+
+클래스
+    상속 가능
+        class 클래스(상속 클래스):
+    생성자(초기화)
+        def __init__(self[, args, ...])         # 생성자 (Constructor)
+    연산자 오버라이딩
+        def __add__(self[, others, ...])        # 클래스 +(더하기) 연산자
+        def __sub__(self[, others, ...])        # 클래스 -(빼기) 연산자
+        def __mul__(self[, others, ...])        # 클래스 *(곱하기) 연산자
+        def __truediv__(self[, others, ...])    # 클래스 /(나누기) 연산자
+    
+모듈
+    모듈 기본 경로
+        같은 디렉터리
+        파이썬 라이브러리가 저장된 디렉터리
+    경로 추가 01(Python 커멘드)
+        import sys
+        sys.path.append('경로')
+    경로 추가 02(cmd 커멘드)
+        set PYTHONPATH=경로       # 시스템 환경변수로 등록 가능 PYTHONPATH : %PYTHONPATH%;경로;경로
+
+패키지
+    모듈 안에서는 상대경로 사용 가능
+    
+import
+    import a.b.c 에서 c와 같이 마지막은 반드시 모듈 또는 패키지 여야 한다. (함수를 직접 사용 할 수 없다)
+    함수 import
+        from 모듈 import 함수
+        를 사용하고 함수 명을 직접 호출 할 수 있다.
